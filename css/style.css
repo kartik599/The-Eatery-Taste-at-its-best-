@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Poppins" , sans-serif;
+    overflow-x: hidden;
+    /* line-height: 1.4rem ; */
+}
+
+
+
+
+
+/* universal */
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vmin;
+}
+
+li{
+    text-decoration: none;
+    list-style: none ;
+}
+
+.active a{
+    color: rgb(228,1,65);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* utilities */
+
+.mleft{
+    margin-left: 20px;
+}
+.mright{
+    margin-right: 20px;
+}
+
+
+.btn{
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    margin-top: 10px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: white;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+.btn-pink{
+    color: rgb(228,1,65);
+    font-weight: bold;
+}
+.btn-dark{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.bheading{font-size: 5vmin}
+.mheading{ font-size: 4vmin;}
+.sheading{ font-size: 1.5rem;}
+
+.btn::after, .nav-links li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(228,1,65);
+    transition: 0.5s;
+}
+
+
+
+.btn:hover::after, .nav-links li a:hover::after{
+    color: rgb(228,1,65);
+    width: 100%;
+}
+
+.ctn{
+    margin: 30px 0;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+.ctn:hover{
+    background-color: rgb(228,1,65);
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: black
+  }
+  
+  .bg-primary {
+    background: rgb(228,1,65);
+    color: white;
+  }
+  
+
+
+
+
+
+/* nav-bar */
+
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    z-index: 1;
+    background-color: black;
+}
+
+.logo{
+    object-fit: contain;
+    width: 150px;
+    /* margin-left: 50px; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 10px 20px;
+    position: relative;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* header */
+
+header{
+    background: rgba(0, 0, 0, 0.5) url('../media/bg3.jpg') bottom center/cover ;
+    background-size: cover;
+    background-blend-mode: saturation;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+} 
+
+.header-content{
+    margin-bottom: 150px;
+    color: #ffffff;
+    text-align: center;
+
+}   
+
+.header-content h2{
+    margin:20px;
+    font-size: 10vmin;
+
+}
+
+span{
+    color: rgb(255, 0, 72);
+}
+
+.line{
+    width: 200px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: rgb(228,1,65);
+}
+
+.header-content h3{
+    font-size: 4vmin;
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+
+
+
+
+
+
+
+/* == Recipes == */
+
+.recipes{
+    margin:40px auto;
+}
+
+.container{
+    margin:auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.recipe-img{
+    object-fit: contain;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px;  */
+    width: 100%;
+    /* margin: auto; */
+    /* background-color: black; */
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+p{
+    padding: 0 40px;
+    font-size: 1rem;
+}
+
+.recipes .row{
+    margin: 20px 0;
+} 
+
+.recipes .row h3{
+    margin: 20px auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+hr{
+    margin: 20px 0;
+}
+
+.nbold{
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+
+
+
+/* ==features== */
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 50px;
+    text-align:center;
+    margin: 40px auto 0 auto;
+  }
+  
+  .box i {
+    margin-bottom: 20px;
+  }
+
+  .box p{
+      margin-top: 10px;
+  }
+
+
+
+
+
+
+
+  /* ==slider== */
+
+  .slider{
+      position: relative;
+  }
+
+  .slide{
+      width: 100%;
+      height: 80vh;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+      color: white;
+      text-align: center;
+
+  }
+
+  .slider-content{
+      width: 80%;
+      align-items: center;
+      padding: 20px 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+
+  .slider-content p{
+      margin-top: 20px;
+  }
+
+  .slider-content p{
+      font-size: 2.5vmin;
+  }
+
+  .slide1{
+      background: rgba(0, 0, 0, 0.6) url('../media/2.jpg') center center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-attachment: fixed;
+  }
+  .slide2{
+      background: rgba(0, 0, 0, 0.6) url('../media/3.jpg') center center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-attachment: fixed;
+  }
+  .slide3{
+      background: rgba(0, 0, 0, 0.6) url('../media/1.jpg') center center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-attachment: fixed;
+  }
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  #arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 40px;
+  }
+    
+  #arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 40px;
+  }
+
+
+
+
+
+
+
+
+  /* footer */
+
+footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 50px auto 10px auto;
+      text-align: center;
+      flex-direction: column;
+      line-height: 2rem;
+  }
+
+  .information{
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .main-footer{
+      border-top: rgb(61, 61, 61) 2px solid;
+      /* margin-top: 20px; */
+      width: 100%;
+      padding: 10px 20px;
+      color: rgb(61, 61, 61);
+      font-weight: 500;
+      font-size: 2.5vmin;
+  }
+
+  .footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      padding: 0 20px  ;
+      margin: 0 40px 20px 0;
+      position: relative;
+
+  }
+
+  footer h3{
+      font-weight: bold;
+      color: rgb(61, 61, 61);
+      font-size: 2.5vmin;
+  }
+
+  .footer-icon{
+      margin-right: 10px;
+      color: rgb(61, 61, 61);
+  }
+  .style{
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    font-size: 2.5vmin;
+  }
+
+  .social-media i{
+      padding: 0 20px;
+      color: rgb(61, 61, 61);
+      margin-bottom: 20px;
+  }
+
+  .footer a:hover{
+      color: rgb(228,1,65);
+  }

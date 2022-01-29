@@ -1,0 +1,29 @@
+
+.navbar{
+    color: rgb(255, 255, 255);
+    /* background-color: black  !important; */
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar:first-child{
+    display: inline-block
+}
+
+.bg{
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.mobile-menu{
+    margin-top: 0px;
+}
+.menu-btn{
+    display: block;
+}
+
+.contact-form{
+    max-width: none;
+}
